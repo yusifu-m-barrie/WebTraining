@@ -1,0 +1,52 @@
+<div class="allDiv">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<div class="box box-info">
+  <div class="box-body">
+    <div class="col-md-3"><span class="circle"><span><i class="fa fa-folder"></i></span></span> </div>
+  </div> <h5 class="font-weight-bold mt-5">El candidato aun no ha estado en ningun proceso selectivo:</h5>
+</div>
+</div>
+
+
+
+
+
+clickRefrence(itemId: RequestIncorporationByCandidate) {
+    if (itemId.id) {
+      this.showItem = false;
+
+    } else {
+      this.departmentsItemId = itemId;
+      this.showItem = true;
+    }
+  }
+
+
+
+
+CSS
+
+
+.circle {
+  background: #F1E9E9;
+  border-radius: 150%;
+  color:grey;
+  display: inline-block;
+  height: 150px;
+  font-weight: bold;
+  font-size: 5em;
+  width: 150px;
+  margin: 0 auto;
+}
+
+.circle span {
+  display: table-cell;
+  vertical-align: middle;
+  height: 150px;
+  width: 150px;
+  text-align: center;
+  padding: 0 15px;
+}
+.allDiv{
+  text-align: center
+}
